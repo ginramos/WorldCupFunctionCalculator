@@ -1,4 +1,4 @@
-#Function to iterate over 2 football scores lists comparing the results and printing values
+#Function to iterate over 2 football scores lists, comparing results and assigning points: 3 for exact result, 2 goal difference and 1 for tendence. 
 
 def wc_calculator(list1,list2):
   total_points = 0
