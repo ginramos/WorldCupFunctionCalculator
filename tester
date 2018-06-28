@@ -1,4 +1,4 @@
-#Function to iterate over 2 football scores lists,comparing the results, asssigning points and printing the values.
+#Function to iterate over 2 football scores lists,comparing actual and guessed results of the 2018 World Cup, asssigning points and printing the values.
 
 def wc_calculator(list1,list2):
   total_points = 0
