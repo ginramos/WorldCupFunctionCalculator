@@ -1,21 +1,17 @@
+#Function to iterate over 2 football scores lists,comparing actual and guessed results of the 2018 World Cup, asssigning points and printing the values.
+
 def wc_calculator(list1,list2):
   total_points = 0
   for (x,y) in zip(list1, list2):
     if x[0] == y[0] and x[1] == y[1]:
-      print("Exact result, 3 points")
       points = 3
     elif x[0] - y[0] == x[1] - y[1]:
-      print("Goal difference, 2 points")
       points = 2
     elif x[0] > x[1] and y[0] > y[1]:
-      print("Tendency, 1 point")
       points = 1
     elif x[0] < x[1] and y[0] < y[1]:
-      print("Tendency, 1 point")
       points = 1
     else:
-      print("Missed it, 0 points")
       points = 0
     total_points += points
-
-  print(total_points)
+  print("You has {} points.".format(total_points))
